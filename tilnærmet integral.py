@@ -20,7 +20,7 @@ for i in range (ant_rek):
   areal_verdier.append(a)
  
 
-  ##Test
+
 
 
 print(sum(areal_verdier))
