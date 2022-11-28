@@ -1,28 +1,23 @@
+from math import*
 
-import math
-def f(x): 
-  return 3*math.sqrt(x)
-  
-areal_verdier = []
-areal_trapes = []
-start_verdi = 1
-slutt_verdi = 2
-ant_rek = 100
-bredde_rek = (slutt_verdi-start_verdi)/ant_rek
-rektangel_startpos = bredde_rek*0
-## 0 = venstremetode, 0.5 = midt, 1= høyre
+def f(x):
+    return sqrt(x**3+1)
 
-for i in range(ant_rek): ##rektangelmetode
-  a = f(i*bredde_rek+rektangel_startpos+start_verdi)*bredde_rek
-  areal_verdier.append(a)
+a = 1 ##nedregrense
+b = 3 ##øvregrense
+n = 100 ##antall
+delta_x = (b-a)/n
+sum_rek = 0
+sum_trap = 1/2*f(a)*delta_x
+startpos = 0 * delta_x
+## 0 = venstra, 0.5 midt, 1 høyre
 
-for i in range (ant_rek): ##trapesmetode
-    a= f(start_verdi+(i-1)*bredde_rek)*bredde_rek
-    areal_trapes.append(a)
- 
+for i in range(1,n+1): ##rektangelmetode
+    sum_rek += f(1+(i-1)*delta_x+startpos)*delta_x
 
+for i in range(2,n+1):
+    sum_trap += f(a+(i-1)*delta_x)*delta_x
+sum_trap += 1/2*f(b)*delta_x
 
-
-
-print(sum(areal_verdier))
-print(sum(areal_trapes))
+print(sum_rek)
+print(sum_trap)
