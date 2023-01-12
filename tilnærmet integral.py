@@ -1,7 +1,7 @@
 from math import*
 
 def f(x):
-    return sqrt(x**3+1)
+    return 9.5+10.5*sin(0.45*x-1.129)
 
 a = 1 ##nedregrense
 b = 3 ##øvregrense
