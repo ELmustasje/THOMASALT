@@ -38,7 +38,7 @@ public class staticAndFinal {
         
         thing1.name = "bob";
         thing2.name = "ali";
-        thing1.beskrivelse = "hei";// riktig syntax er bare thing.beskrivelse men når du endrer på en av de endrer
+        thing.beskrivelse = "hei";// riktig syntax er bare thing.beskrivelse men når du endrer på en av de endrer
                                    // du på alle objektene
         System.out.println(thing1.name + thing2.name);
         System.out.println(thing2.beskrivelse + thing1.beskrivelse);
