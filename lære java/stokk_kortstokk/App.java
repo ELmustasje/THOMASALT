@@ -6,4 +6,5 @@ public class App {
     kortStokk kortstokk = new kortStokk();
     kortstokk.stokk(); 
   }
+  
 }
