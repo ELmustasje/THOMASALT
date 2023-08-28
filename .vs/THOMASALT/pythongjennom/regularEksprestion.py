@@ -57,4 +57,33 @@ print(bat.search(tekst2).group(1, 0))
 bruk av spørsmåltegn ?, eks 'Bat(wo)?man', da ser den for både batwoman og batman
 bruker du * eks "bat(wo)*man" kan du gi den så mange tilfeller av wo, eks batwowowowoman vil retunere batwowowowoman
 bruker du + eks bat(wo)+man må du wo+man iallefall komme en gang, batman = None, batwoman og batwowowoman vil fungere
+
+karakterklasser:
+\d = tall
+\D = ikke tall
+\w = bokstaver, tall. Tenk på at du bruker denne til å finne ord
+\W = mellomrom osv
+\s = mellomrom, tab, newline 
+\S = som ikke er mellomrom, tab og newline
+
+bruk eks \d+,\w+ for å ta hele ordet/tallet
+
+(^) og ($) brukes for å indikere at matchen må være på begynnelsen eller slutten av teksten du gir den
+
+startermedHello = re.compile(^Hello) - må begynne med Hello
+sluttermedHello = re.compile($Hello) - må slutte med Hello
+
+. og .* er wildcards, . kan være hva som helst unntatt et mellomrom og .* kan være sammenhengene wildcards
+.at på flat vil go lat mens .*at på flat vil gi flat
+
+det finnes en grådig og ikkegråde måte for python å gå finne på 
+bruker du et spørsmålstegn blir den ikkegårdig og uten spm tegn blir den grådig. 
+den grådige vil alltid ta det siste den kan for å få med seg mest mulig tekst mens den ikkegådige vil gjør motsatt
+
+nongreedyRegex = re.compile(r'<.*?>') på <To serve man> for dinner.> = '<To serve man>'
+greedyRegex = re.compile(r'<.*>') på <To serve man> for dinner.>  = '<To serve man> for dinner.>'
+
+for å overse om det er stor eller liten bokstav kan du gi re.I som andreargument.
+reg = re.compile("robot",re.I)
+da blir alt fra Robot, robot, RoBOt godkjent
 """

@@ -21,6 +21,12 @@ def printBoard(board):
     print(board["DL"] + "|" + board["D"] + "|" + board["DR"])
 
 
+def checkFrom(valg):
+    val = board.values()
+    if valg in board.keys():
+        board["TL"].key
+
+
 turn = 0
 while True:
     printBoard(board)
@@ -38,3 +44,4 @@ while True:
             os.system("CLS")
         else:
             print("allerede tatt, vel en annen")
+    check = list(board.keys())
