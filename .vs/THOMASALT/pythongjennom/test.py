@@ -1,7 +1,3 @@
-import re
-import math
+from random import randint
 
-navnregex = re.compile(".+", re.DOTALL)
-
-a = navnregex.search("first name thomas \n last name barth")
-print(a)
+print

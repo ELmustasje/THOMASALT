@@ -1,1 +1,7 @@
-print("@", "type".rjust(10))
+print(
+    """
+hei 
+jeg heter thomas
+
+"""
+)
