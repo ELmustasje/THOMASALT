@@ -1,6 +1,3 @@
-mår = input("Angi menneskeår: ")
-
-
 def kår(mår):
     if mår == 1:
         return 15
@@ -11,5 +8,5 @@ def kår(mår):
         return kår
 
 
-kår = kår(mår)
-print(kår)
+mår = int(input("Angi menneskeår: "))
+kår = print(f"Dette tilsvarer {kår(mår)} katteår.")

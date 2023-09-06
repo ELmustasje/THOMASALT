@@ -1,5 +1,13 @@
+import sys, os
+import subprocess
+
+
+subprocess.check_call(
+    [sys.executable, "-m", "pip", "install", "range_key_dict"],
+    stdout=subprocess.DEVNULL,
+)
+
 from range_key_dict import RangeKeyDict
-import pyinputplus
 
 
 nm = RangeKeyDict(
@@ -15,7 +23,7 @@ nm = RangeKeyDict(
 )
 THz = RangeKeyDict(
     {
-        (670, 790): "Voilet",
+        (670, 790): "Violet",
         (620, 669): "Blue",
         (600, 619): "Cyan",
         (530, 599): "Green",
@@ -26,28 +34,24 @@ THz = RangeKeyDict(
 )
 
 
-def nm_THz(input):
-    if input == "nm" or input == "THz":
-        return input
-    else:
-        raise Exception(f"må være nm eler THz, det kan ikke være {input}.")
-
-
 def synlig_lys(valg):
+    if valg != "nm" and valg != "THz":
+        print(f"Enheten må være i nm eller THz, det kan ikke være {valg}.")
+        return None
     if valg == "nm":
-        verdi = pyinputplus.inputInt("Angi verdi i nm: ")
+        verdi = int(input("Angi verdi i nm: "))
         if verdi >= 400 and verdi <= 790:
             print(nm[verdi])
         else:
             print(f"{verdi} nm er utenfor det synlige spekteret.")
 
     if valg == "THz":
-        verdi = pyinputplus.inputInt("Angi verdi i THz: ")
+        verdi = int(input("Angi verdi i THz: "))
         if verdi >= 380 and verdi <= 750:
             print(THz[verdi])
         else:
             print(f"{verdi} THz er utenfor det synlige spekteret.")
 
 
-valg = pyinputplus.inputCustom(nm_THz, "Angi enhet (nm eller THz): ")
+valg = input("Angi enhet (nm eller THz): ")
 synlig_lys(valg)

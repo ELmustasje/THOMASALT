@@ -1,109 +1,150 @@
 from hashlib import *
 import time
 import multiprocessing
+import pyinputplus
+import re
 
 
-def getPassword():
-    pword = input("lag et passord i formatet uuudddd: ")
-    pword = sha256(bytes(pword, "utf-8")).hexdigest()
-    print(pword)
-    return pword
+__author__ = "Thomas Barth"
 
 
-##går fra AAA0000 - AAA0001 osv
+def getPassword(pword):
+    check = re.compile(r"[A-Z]{3}\d{4}")
+    checkpw = check.search(pword)
+    if checkpw == None:
+        raise Exception("wrong format, format neeeded")
+    else:
+        hx = sha256(bytes(checkpw.group(), "utf-8")).hexdigest()
+        print(hx)
+        return hx
+
+
+##goes from AAA0000 - AAA0001 osv
 def Bruteforce(hx):
-    usrPw = ""
+    usrPw = list("AAA0000")
     print("Algorithm 1 running")
     start = time.time()
     for a in range(ord("A"), ord("Z") + 1):
-        usrPw = usrPw[:0] + chr(a) + usrPw[1:]
+        usrPw[0] = chr(a)
         for b in range(ord("A"), ord("Z") + 1):
-            usrPw = usrPw[:1] + chr(b) + usrPw[2:]
+            usrPw[1] = chr(b)
             for c in range(ord("A"), ord("Z") + 1):
-                usrPw = usrPw[:2] + chr(c) + usrPw[3:]
+                usrPw[2] = chr(c)
                 for d in range(ord("0"), ord("9") + 1):
-                    usrPw = usrPw[:3] + chr(d) + usrPw[4:]
+                    usrPw[3] = chr(d)
                     for e in range(ord("0"), ord("9") + 1):
-                        usrPw = usrPw[:4] + chr(e) + usrPw[5:]
+                        usrPw[4] = chr(e)
                         for f in range(ord("0"), ord("9") + 1):
-                            usrPw = usrPw[:5] + chr(f) + usrPw[6:]
+                            usrPw[5] = chr(f)
                             for g in range(ord("0"), ord("9") + 1):
-                                usrPw = usrPw[:6] + chr(g) + usrPw[7:]
-                                if sha256(bytes(usrPw, "utf-8")).hexdigest() == hx:
-                                    print(f"1 used {time.time()-start} to find {usrPw}")
+                                usrPw[6] = chr(g)
+                                if (
+                                    sha256(bytes("".join(usrPw), "utf-8")).hexdigest()
+                                    == hx
+                                ):
+                                    usrPw = "".join(usrPw)
+                                    print(
+                                        f"1 used {time.time()-start} s to find {usrPw}"
+                                    )
+                                    return usrPw
 
 
-##går fra ZZZ9999 - ZZZ9998 osv
+##goes from ZZZ9999 - ZZZ9998 osv
 def Bruteforce2(hx):
-    usrPw = ""
+    usrPw = list("ZZZ9999")
     print("Algorithm 2 running")
     start = time.time()
     for a in reversed(range(ord("A"), ord("Z") + 1)):
-        usrPw = usrPw[:0] + chr(a) + usrPw[1:]
+        usrPw[0] = chr(a)
         for b in reversed(range(ord("A"), ord("Z") + 1)):
-            usrPw = usrPw[:1] + chr(b) + usrPw[2:]
+            usrPw[1] = chr(b)
             for c in reversed(range(ord("A"), ord("Z") + 1)):
-                usrPw = usrPw[:2] + chr(c) + usrPw[3:]
+                usrPw[2] = chr(c)
                 for d in reversed(range(ord("0"), ord("9") + 1)):
-                    usrPw = usrPw[:3] + chr(d) + usrPw[4:]
+                    usrPw[3] = chr(d)
                     for e in reversed(range(ord("0"), ord("9") + 1)):
-                        usrPw = usrPw[:4] + chr(e) + usrPw[5:]
+                        usrPw[4] = chr(e)
                         for f in reversed(range(ord("0"), ord("9") + 1)):
-                            usrPw = usrPw[:5] + chr(f) + usrPw[6:]
+                            usrPw[5] = chr(f)
                             for g in reversed(range(ord("0"), ord("9") + 1)):
-                                usrPw = usrPw[:6] + chr(g) + usrPw[7:]
-                                if sha256(bytes(usrPw, "utf-8")).hexdigest() == hx:
-                                    print(f"2 used {time.time()-start} to find {usrPw}")
+                                usrPw[6] = chr(g)
+                                if (
+                                    sha256(bytes("".join(usrPw), "utf-8")).hexdigest()
+                                    == hx
+                                ):
+                                    usrPw = "".join(usrPw)
+                                    print(
+                                        f"2 used {time.time()-start} s to find {usrPw}"
+                                    )
+                                    return usrPw
 
 
-##går fra AAA0000 - BAA0000
+##goes from AAA0000 - BAA0000 osv
 def Bruteforce3(hx):
-    usrPw = "AAA0000"
+    usrPw = list("AAA0000")
     print("Algorithm 3 running")
     start = time.time()
     for a in range(ord("0"), ord("9") + 1):
-        usrPw = usrPw[:6] + chr(a) + usrPw[7:]
+        usrPw[6] = chr(a)
         for b in range(ord("0"), ord("9") + 1):
-            usrPw = usrPw[:5] + chr(b) + usrPw[6:]
+            usrPw[5] = chr(b)
             for c in range(ord("0"), ord("9") + 1):
-                usrPw = usrPw[:4] + chr(c) + usrPw[5:]
+                usrPw[4] = chr(c)
                 for d in range(ord("0"), ord("9") + 1):
-                    usrPw = usrPw[:3] + chr(d) + usrPw[4:]
+                    usrPw[3] = chr(d)
                     for e in range(ord("A"), ord("Z") + 1):
-                        usrPw = usrPw[:2] + chr(e) + usrPw[3:]
+                        usrPw[2] = chr(e)
                         for f in range(ord("A"), ord("Z") + 1):
-                            usrPw = usrPw[:1] + chr(f) + usrPw[2:]
+                            usrPw[1] = chr(f)
                             for g in range(ord("A"), ord("Z") + 1):
-                                usrPw = usrPw[:0] + chr(g) + usrPw[1:]
-                                if sha256(bytes(usrPw, "utf-8")).hexdigest() == hx:
-                                    print(f"3 used {time.time()-start} to find {usrPw}")
+                                usrPw[0] = chr(g)
+                                if (
+                                    sha256(bytes("".join(usrPw), "utf-8")).hexdigest()
+                                    == hx
+                                ):
+                                    usrPw = "".join(usrPw)
+                                    print(
+                                        f"3 used {time.time()-start} s to find {usrPw}"
+                                    )
+                                    return usrPw
 
 
-##går fra ZZZ9999 - YZZ9999
+##goes from ZZZ9999 - YZZ9999 osv
 def Bruteforce4(hx):
-    usrPw = "ZZZ9999"
+    usrPw = list("ZZZ9999")
     print("Algorithm 4 running")
     start = time.time()
     for a in reversed(range(ord("0"), ord("9") + 1)):
-        usrPw = usrPw[:6] + chr(a) + usrPw[7:]
+        usrPw[6] = chr(a)
         for b in reversed(range(ord("0"), ord("9") + 1)):
-            usrPw = usrPw[:5] + chr(b) + usrPw[6:]
+            usrPw[5] = chr(b)
             for c in reversed(range(ord("0"), ord("9") + 1)):
-                usrPw = usrPw[:4] + chr(c) + usrPw[5:]
+                usrPw[4] = chr(c)
                 for d in reversed(range(ord("0"), ord("9") + 1)):
-                    usrPw = usrPw[:3] + chr(d) + usrPw[4:]
+                    usrPw[3] = chr(d)
                     for e in reversed(range(ord("A"), ord("Z") + 1)):
-                        usrPw = usrPw[:2] + chr(e) + usrPw[3:]
+                        usrPw[2] = chr(e)
                         for f in reversed(range(ord("A"), ord("Z") + 1)):
-                            usrPw = usrPw[:1] + chr(f) + usrPw[2:]
+                            usrPw[1] = chr(f)
                             for g in reversed(range(ord("A"), ord("Z") + 1)):
-                                usrPw = usrPw[:0] + chr(g) + usrPw[1:]
-                                if sha256(bytes(usrPw, "utf-8")).hexdigest() == hx:
-                                    print(f"4 used {time.time()-start} to find {usrPw}")
+                                usrPw[0] = chr(g)
+                                if (
+                                    sha256(bytes("".join(usrPw), "utf-8")).hexdigest()
+                                    == hx
+                                ):
+                                    usrPw = "".join(usrPw)
+                                    print(
+                                        f"4 used {time.time()-start} s to find {usrPw}"
+                                    )
+
+                                    return usrPw
 
 
 if __name__ == "__main__":
-    hxusrpw = getPassword()
+    hxusrpw = pyinputplus.inputCustom(
+        getPassword, "write a password in the format uuudddd: "
+    )
+    print("code by thbar6999")
     p1 = multiprocessing.Process(target=Bruteforce, args=[hxusrpw])
     p2 = multiprocessing.Process(target=Bruteforce2, args=[hxusrpw])
     p3 = multiprocessing.Process(target=Bruteforce3, args=[hxusrpw])

@@ -1,37 +1,39 @@
-from hashlib import *
-import time
-from random import randint
-import multiprocessing
+from uib_inf100_graphics.simple import canvas, display
 
+x1 = int(input("x1 = "))
+y1 = int(input("y1 = "))
+x2 = int(input("x2 = "))
+y2 = int(input("y2 = "))
 
-def getPassword():
-    pword = input("lag et passord i formatet uuudddd: ")
-    pword = sha256(bytes(pword, "utf-8")).hexdigest()
-    return pword
+diff = max(x1, x2) - min(x1, x2)
+bredde = abs(x2 - x1)
+hoyde = abs(y2 - y1)
 
+svart_stripe_start = x1
+svart_stripe_slutt = svart_stripe_start + diff / 3
+gul_stripe_start = svart_stripe_slutt
+gul_stripe_slutt = gul_stripe_start + diff / 3
+rod_stripe_start = gul_stripe_slutt
+rod_stripe_slutt = rod_stripe_start + diff / 3
 
-##går fra AAA0000 - AAA0001 osv
-def Bruteforce(hx):
-    usrPw = ""
-    print("Algorithm 1 running")
-    start = time.time()
-    for a in range(ord("A"), ord("Z") + 1):
-        usrPw = usrPw[:0] + chr(a) + usrPw[1:]
-        for b in range(ord("A"), ord("Z") + 1):
-            usrPw = usrPw[:1] + chr(b) + usrPw[2:]
-            for c in range(ord("A"), ord("Z") + 1):
-                usrPw = usrPw[:2] + chr(c) + usrPw[3:]
-                for d in range(ord("0"), ord("9") + 1):
-                    usrPw = usrPw[:3] + chr(d) + usrPw[4:]
-                    for e in range(ord("0"), ord("9") + 1):
-                        usrPw = usrPw[:4] + chr(e) + usrPw[5:]
-                        for f in range(ord("0"), ord("9") + 1):
-                            usrPw = usrPw[:5] + chr(f) + usrPw[6:]
-                            for g in range(ord("0"), ord("9") + 1):
-                                usrPw = usrPw[:6] + chr(g) + usrPw[7:]
-                                if sha256(bytes(usrPw, "utf-8")).hexdigest() == hx:
-                                    print(f"1 used {time.time()-start} to find {usrPw}")
-                                    return usrPw
+print(f"Flag width is {bredde}")
+print(f"Flag height is {hoyde}")
+print(
+    f"Black stripe starts at x = {svart_stripe_start} and ends at x = {svart_stripe_slutt}"
+)
+print(
+    f"Yellow stripe starts at x = {gul_stripe_start} and ends at x = {gul_stripe_slutt}"
+)
+print(
+    f"Red stripe starts at x = {rod_stripe_start} ande ends at x = {rod_stripe_slutt}"
+)
 
+canvas.create_rectangle({svart_stripe_start}, y1, svart_stripe_slutt, y2, fill="BLACK")
+canvas.create_rectangle(
+    gul_stripe_start, y1, gul_stripe_slutt, y2, fill="YELLOW", outline="YELLOW"
+)
+canvas.create_rectangle(
+    rod_stripe_start, y1, rod_stripe_slutt, y2, fill="RED", outline="RED"
+)
 
-Bruteforce(getPassword())
+display(canvas)
