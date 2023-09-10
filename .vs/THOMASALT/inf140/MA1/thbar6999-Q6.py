@@ -4,7 +4,6 @@ import multiprocessing
 import pyinputplus
 import re
 
-
 __author__ = "Thomas Barth"
 
 
@@ -12,7 +11,9 @@ def getPassword(pword):
     check = re.compile(r"[A-Z]{3}\d{4}")
     checkpw = check.search(pword)
     if checkpw == None:
-        raise Exception("wrong format, format neeeded")
+        raise Exception(
+            "wrong format, format neeeded uuudddd, u = capital letter, d = number"
+        )
     else:
         hx = sha256(bytes(checkpw.group(), "utf-8")).hexdigest()
         print(hx)
