@@ -1,4 +1,4 @@
-sider = int(input("Sidelengde: "))
+sider = int(input("Sidelengde: \n"))
 
 
 def createdia(sider):
