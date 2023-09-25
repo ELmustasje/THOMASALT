@@ -1,0 +1,111 @@
+1694426099934	geckodriver	INFO	Listening on 127.0.0.1:62206
+1694426103010	mozrunner::runner	INFO	Running command: "C:\\Users\\thoma\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debugging- ... 7" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thoma\\AppData\\Local\\Temp\\rust_mozprofilewcyM4J"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694426104983	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694426105146	Marionette	INFO	Listening on port 62241
+WebDriver BiDi listening on ws://127.0.0.1:62207
+Read port: 62241
+1694426105493	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62207/devtools/browser/f9efc3a8-44a5-45ac-9b86-01bbcaa634cb
+1694426121072	Marionette	INFO	Stopped listening on port 62241
+Dynamically enable window occlusion 1
+1694426165359	geckodriver	INFO	Listening on 127.0.0.1:62277
+1694426168429	mozrunner::runner	INFO	Running command: "C:\\Users\\thoma\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debugging- ... 8" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thoma\\AppData\\Local\\Temp\\rust_mozprofileMqcz42"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694426169039	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694426169302	Marionette	INFO	Listening on port 62295
+Read port: 62295
+WebDriver BiDi listening on ws://127.0.0.1:62278
+1694426169454	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62278/devtools/browser/0b99652b-d77c-4a46-9f19-f87fdf65eff0
+1694426175589	Marionette	INFO	Stopped listening on port 62295
+Dynamically enable window occlusion 1
+console.error: (new AbortError("IndexedDB: main/url-classifier-skip-urls list() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1694426208643	geckodriver	INFO	Listening on 127.0.0.1:62358
+1694426211714	mozrunner::runner	INFO	Running command: "C:\\Users\\thoma\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debugging- ... 9" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thoma\\AppData\\Local\\Temp\\rust_mozprofilepAytYn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694426212323	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694426212476	Marionette	INFO	Listening on port 62366
+WebDriver BiDi listening on ws://127.0.0.1:62359
+Read port: 62366
+1694426212589	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62359/devtools/browser/2c3e97a2-8a9c-48d9-b200-8a54c71f6fa2
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idp.feide.no."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idp.feide.no."
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://echo.uib.no/_next/static/chunks/pages/_app-229144eee5829bff.js, line 368: Script terminated by timeout at:
+h@https://echo.uib.no/_next/static/chunks/pages/_app-229144eee5829bff.js:368:258466
+
+1694426290632	Marionette	INFO	Stopped listening on port 62366
+Dynamically enable window occlusion 1
+1694426293893	geckodriver	INFO	Listening on 127.0.0.1:62454
+1694426296948	mozrunner::runner	INFO	Running command: "C:\\Users\\thoma\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debugging- ... 5" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thoma\\AppData\\Local\\Temp\\rust_mozprofilePJB4pf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694426297524	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694426297675	Marionette	INFO	Listening on port 62462
+WebDriver BiDi listening on ws://127.0.0.1:62455
+Read port: 62462
+1694426298002	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62455/devtools/browser/921b803b-bb31-49f7-bbd4-c788bc42929d
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://echo.uib.no/_next/static/chunks/framework-ca1f92adf9c245ea.js, line 9: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idp.feide.no."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+1694426339763	Marionette	INFO	Stopped listening on port 62462
+Dynamically enable window occlusion 1

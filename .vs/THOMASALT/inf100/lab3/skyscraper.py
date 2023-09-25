@@ -1,7 +1,7 @@
 from uib_inf100_graphics.simple import *
 
-ant = input("Hvor mange vinduer skal toget ha? ")
-eta = input("Hvor mange vinduer skal toget ha? ")
+eta = input("Hvor mange etasjer skal skyskraperen ha? ")
+ant = input("Hvor mange vinduer skal det være per etasje?")
 
 
 def tegnsky(ant, eta):
